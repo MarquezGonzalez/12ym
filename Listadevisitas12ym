@@ -1,0 +1,14 @@
+import random
+
+A = ["Claudia Beatriz", "Elizabeth", "Fe", "Alejandra", "Indira", "Cintia"]
+B = ["Illenay", "Neicy", "Heannette", "Eunice", "Claudia", "Adilenis"]
+
+pairs = []
+while len(A) > 0 and len(B) > 0:
+    a = random.choice(A)
+    b = random.choice(B)
+    pairs.append((a, b))
+    A.remove(a)
+    B.remove(b)
+
+print(pairs)
